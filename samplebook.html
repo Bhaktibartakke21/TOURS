@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <h3 align="center">Book Now</h3>
+    <form action="book.php" method="post">
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="firstname" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phonenumber">Phone Number:</label><br>
+        <input type="tel" id="phonenumber" name="phone" required><br>
+        <label for="tour">Name of the Tour:</label><br>
+        <input type="text" id="tour" name="tourname" ><br>
+        <label for="departure">Departure Date/Time:</label><br>
+        <input type="date" id="departure" name="Departure" required><br>
+        <label for="return">Return Date/Time:</label><br>
+        <input type="date" id="return" name="return" required><br>
+        <label for="pickup">Pickup Address:</label><br>
+        <input type="text" id="pickup" name="pickup_address" required><br>
+        <label for="drop">Drop Address:</label><br>
+        <input type="text" id="drop" name="drop_address" required><br>
+        <input type="submit" value="Confirm">
+    </form>
+</body>
+</html>
